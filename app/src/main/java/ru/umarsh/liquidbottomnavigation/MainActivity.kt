@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
 
 @RequiresApi(Build.VERSION_CODES.S)
 private fun getRenderEffect(): RenderEffect {
-    val blurEffect = RenderEffect.createBlurEffect(80f, 80f, Shader.TileMode.MIRROR)
+    val blurEffect = RenderEffect.createBlurEffect(80f, 80f, Shader.TileMode.REPEAT)
     val alphaMatrix = RenderEffect.createColorFilterEffect(
         ColorMatrixColorFilter(
             ColorMatrix(
